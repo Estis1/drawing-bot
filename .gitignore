@@ -1,0 +1,9 @@
+client/node_modules
+client/dist
+client/.env
+server/bin
+server/obj
+server/.vs
+server/appsettings.Development.json
+.vscode
+.DS_Store

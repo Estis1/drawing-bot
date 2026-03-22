@@ -1,16 +1,69 @@
-# React + Vite
+# 🎨 Drawing Bot – Fullstack AI Canvas App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fullstack web application that allows users to generate drawings using natural language.
 
-Currently, two official plugins are available:
+Users can describe what they want to draw (e.g., "draw a house with a sun"), and the system converts the prompt into structured drawing commands using an LLM (Google Gemini), then renders it on an HTML canvas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ✏️ Draw using natural language (AI-powered)
+* ➕ Add elements to an existing drawing (`add` vs `draw`)
+* 🖱️ Freehand drawing with mouse
+* ↩️ Undo / Redo support
+* 💾 Save drawings to server
+* 📂 Load saved drawings
+* 🧠 AI integration with fallback logic
+* 🎨 Canvas rendering engine
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+Frontend:
+
+* React (Vite)
+* HTML5 Canvas
+
+Backend:
+
+* .NET Core Web API
+* C#
+
+AI:
+
+* Google Gemini API
+
+---
+
+## ⚙️ How to Run
+
+### Backend
+
+cd DrawingBotApi
+dotnet run
+
+### Frontend
+
+cd client
+npm install
+npm run dev
+
+---
+
+## 🔑 API Key
+
+Add to appsettings.json:
+
+{
+"Gemini": {
+"ApiKey": "AIzaSyBzFmgJn8XqbPEMtDLL_GaLv59cWWO91FQ"
+}
+}
+
+---
+
+## 👩‍💻 Author
+
+Esther Shenfeld Cohen

@@ -58,7 +58,7 @@ Add to appsettings.json:
 
 {
 "Gemini": {
-"ApiKey": "AIzaSyBzFmgJn8XqbPEMtDLL_GaLv59cWWO91FQ"
+"ApiKey": I have a private ApiKey which I won't share in the public repo
 }
 }
 
